@@ -1,0 +1,17 @@
+# Abhängigkeiten
+node_modules/
+
+# Kompilierte Dateien
+dist/
+build/
+
+# Umgebungsvariablen / Geheimnisse
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# System- und Editor-Dateien
+.DS_Store
+.vscode/
