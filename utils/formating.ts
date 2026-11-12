@@ -2,11 +2,10 @@ import { compareAsc, format } from "date-fns";
 
 export function formatArray(rawArray: string[]) {
   //console.log(datesRawArray);
-  const datesFormatArray = rawArray
-    .map((date) => {
-      return format(date, "PPPP");
-    })
-    .sort(compareAsc);
+  rawArray.sort(compareAsc);
+  const datesFormatArray = rawArray.map((date) => {
+    return format(date, "dd.MM.yyyy");
+  });
 
   return datesFormatArray;
 }
